@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./website/style.css" />
+		<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase.js"></script>
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="circle-1"></div>
+			<div class="circle-2"></div>
+			<div class="circle-3"></div>
+			<h1>Ma<span>z</span>k Payment Form</h1>
+			<div class="form-elem">
+				<h3>Email Id</h3>
+				<input type="mail" class="inputs" placeholder="abc@mail.com" />
+			</div>
+			<div class="form-elem">
+				<h3>Username</h3>
+				<input type="text" class="inputs" placeholder="username" />
+			</div>
+			<div class="form-elem">
+				<h3>Address</h3>
+				<textarea
+					name=""
+					class="inputs"
+					id="txtarea"
+					placeholder="177A Bleeker Street, NY"
+				></textarea>
+			</div>
+			<div class="form-elem">
+				<h3>Package</h3>
+				<input type="radio" name="package" id="platinum" />
+				<label for="platinum">Platinum</label>
+				<br />
+				<input type="radio" name="package" id="gold" />
+				<label for="gold">Gold</label>
+				<br />
+				<input type="radio" name="package" id="silver" />
+				<label for="silver">Silver</label>
+			</div>
+			<button class="form-elem">Pay!</button>
+		</div>
+		<script src="./website/app.js"></script>
+	</body>
+</html>
