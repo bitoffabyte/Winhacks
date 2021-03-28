@@ -102,6 +102,7 @@ class _HomePageState extends State<HomePage> {
 
   Widget button(Function fuction,IconData icon){
     return FloatingActionButton(
+      heroTag: "btn2",
       onPressed: fuction,
       materialTapTargetSize: MaterialTapTargetSize.padded,
       backgroundColor: color,
@@ -527,6 +528,7 @@ class _HomePageState extends State<HomePage> {
                     button(_onMapTypeButtonPressed, Icons.map),
                     SizedBox(height: 16,),
                     FloatingActionButton(
+                        heroTag: "btn1",
                         backgroundColor: color,
                         child: Icon(Icons.logout,size:35),
                         onPressed: () async{
