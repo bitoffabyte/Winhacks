@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: scroll;
+    background-color: #383737;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+h1, h3, label{
+    color: white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+}
+
+h1{
+    font-size: 108px;
+    line-height: 127px;
+    margin-left: 160px;
+}
+h1 span{
+    color: #7BA3F6;
+}
+
+h3{
+    font-size: 51.3859px;
+    line-height: 60px;
+}
+
+.form-elem{
+    margin-left: 224px;
+}
+
+.form-elem .inputs{
+    width: 1000.8px;
+    height: 88.09px;
+    font-size: 40.49px;
+    color: #ffffff;
+    background-color: transparent;
+    border: 7.34px solid white;
+    border-radius: 14.6817px;
+    outline: 0;
+    padding: 12px 20px;
+    transition: all 0.5s ease;
+}
+.inputs:focus{
+    border-color: #7BA3F6;
+}
+
+#txtarea{
+    resize: none;
+    height: 261px;
+    overflow-y: scroll;
+}
+#txtarea::-webkit-scrollbar{
+    display: none;
+}
+label{
+    padding-left: 20px;
+    font-size: 41.3859px;
+    line-height: 60px;
+    vertical-align: middle;
+}
+input[type=radio] {
+    border: 0px;
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
+    transition: all 0.3s;
+}
+.circle-1{
+    background-image: url("resources/orange.png");
+    position: absolute;
+    width: 241px;
+    height: 241px;
+    right: 38px;
+    top: 67px; 
+}
+.circle-2{
+    background-image: url("resources/colorless.png");
+    position: absolute;
+    width: 257px;
+    height: 257px;
+    right: 143px;
+    top: 480px;
+}
+.circle-3{
+    background-image: url("resources/orange2.png");
+    position: absolute;
+    width: 156px;
+    height: 156px;
+    right: 302px;
+    top: 804px;
+}
+button{
+    margin-top: 91.56px;
+    margin-bottom: 91.56px;
+    width: 467px;
+    height: 99.55px;
+    font-size: 40.86px;
+    color: #fff;
+    border-radius: 33.53px;
+    background-color: #F4592F;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+button:hover{
+    transform: translateY(-5px);
+}
+button:active{
+    background-color: #f45a2fb7;
+    transform: translateY(5px);
+}
