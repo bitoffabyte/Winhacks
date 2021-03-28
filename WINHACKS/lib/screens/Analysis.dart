@@ -233,9 +233,16 @@ class _AnalysisState extends State<Analysis> {
               Text("Best time to visit:",style: TextStyle(fontWeight: FontWeight.bold,color: color3,fontSize: 25),),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Text("keeping your safety in mind and to ensure their is no compromise in your experience we have estimated that the ideal time for you to shop with us is 11:00 AM"),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("keeping your safety in mind and to ensure their is no compromise in your experience we have estimated that the ideal time for you to shop with us is",style: TextStyle(color: Colors.black,fontSize: 13.55),),
+                    Text("${user["Safest_time"]}",style: TextStyle(color: color5,fontSize: 15,fontWeight: FontWeight.bold),),
+                  ],
+                ),
               ),
-              Text("Would you like to visit us today?",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black,fontSize: 25),),
+              Text("Would you like to visit us today?",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black,fontSize: 22),),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
@@ -288,9 +295,33 @@ class _AnalysisState extends State<Analysis> {
 
                       ],
                     ),
-                  SizedBox(height: 10,)
+                  SizedBox(height: 10,),
+
                 ],
               ),
+              SizedBox(
+                height: 35,
+                width: 125,
+                child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      primary: color5,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: new BorderRadius.circular(30.0),
+                      ),// background
+                    ),
+
+                    onPressed: (){
+                      Navigator.pop(context);
+                    },
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text("Back",style: TextStyle(color: Colors.white,fontSize: 18),),
+                        Icon(Icons.subdirectory_arrow_left,color: Colors.white,)
+                      ],
+                    )),
+              ),
+
 
 
             ],
