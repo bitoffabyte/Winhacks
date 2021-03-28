@@ -21,6 +21,7 @@ class _DashboardState extends State<Dashboard> {
     return Scaffold(
       body: Column(
         children: [
+
           RaisedButton(
               child: Icon(Icons.logout,color: Colors.white,),
               shape: RoundedRectangleBorder(
@@ -28,7 +29,6 @@ class _DashboardState extends State<Dashboard> {
               ),
               color: color1,
               onPressed: () {
-
                 signout();
               }),
         ],

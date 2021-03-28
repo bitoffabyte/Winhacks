@@ -82,6 +82,7 @@ class _HomePage1State extends State<HomePage1> {
       print("hello1");
     });
   }
+
   void _shoptypeEditingComplete() {
     FocusScope.of(context).requestFocus(_shoptypenameFocusNode);
   }
