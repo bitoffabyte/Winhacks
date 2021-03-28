@@ -40,7 +40,6 @@ class _DashboardState extends State<Dashboard> {
     super.initState();
     verify1();
   }
-
   verify1()async{
     await FirebaseFirestore.instance.collection("users").doc(_auth.currentUser.uid).get().then((user1) {
       if(user1["Type"]=="Admin"){

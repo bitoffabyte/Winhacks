@@ -295,6 +295,8 @@ class _HomePageState extends State<HomePage> {
                               URL1 ="images/kfc.png";
                             else if(user["StoreName"]=="Nike")
                               URL1 ="images/nike1.png";
+                            else if(user["StoreName"]=="Jockey")
+                              URL1 ="images/jockey1.png";
                             return TextButton(
                               onPressed: (){
                                 Navigator.of(context)

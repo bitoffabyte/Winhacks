@@ -140,6 +140,8 @@ class _ScheduleState extends State<Schedule> {
                             URL1 ="images/kfc.png";
                           else if(user["StoreName"]=="Nike")
                             URL1 ="images/nike1.png";
+                          else if(user["StoreName"]=="Jockey")
+                            URL1 ="images/jockey1.png";
                           if(user["Added"]=="True"){
                             print("THERE");
                           }
@@ -185,7 +187,6 @@ class _ScheduleState extends State<Schedule> {
                           else{
                             return Text("Oops, dont have a schedule yet? Lets build you a custom itenary tailored especially for you. To get started search for the places you would like to visit today.",style: TextStyle(color: Colors.black),);
                           }
-
 
 
 
