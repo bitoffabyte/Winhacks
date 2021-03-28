@@ -113,7 +113,7 @@ class _DashboardState extends State<Dashboard> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(height: 35,),
+              SizedBox(height: MediaQuery.of(context).size.height*0.05,),
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Row(
@@ -142,29 +142,76 @@ class _DashboardState extends State<Dashboard> {
                   ],
                 ),
               ),
-              Text("Track",style: TextStyle(fontWeight: FontWeight.bold,color: color3,fontSize: 25),),
-              SizedBox(height: 15,),
-              Container(
-                height: MediaQuery.of(context).size.height*0.11,
-                width: MediaQuery.of(context).size.height*0.4,
-                decoration: BoxDecoration(
-                    color: color2,
-                    borderRadius: BorderRadius.all(Radius.circular(20))
-                ),
-                child:Padding(
-                  padding: const EdgeInsets.all(15.0),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
+              SizedBox(height: MediaQuery.of(context).size.height*0.025,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("-${user_Instruction1}",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16),),
-                      SizedBox(height: 5,),
-                      Text("-${user_Instruction1}",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16),),
+                      Text("Track",style: TextStyle(fontWeight: FontWeight.bold,color: color3,fontSize: 25),),
+                      SizedBox(height: MediaQuery.of(context).size.height*0.015,),
+                      Container(
+                        height: MediaQuery.of(context).size.height*0.11,
+                        width: MediaQuery.of(context).size.height*0.2,
+                        decoration: BoxDecoration(
+                            color: color2,
+                            borderRadius: BorderRadius.all(Radius.circular(20))
+                        ),
+                        child:Padding(
+                          padding: const EdgeInsets.all(15.0),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("${user_shopname}",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color: Colors.white),),
+                              SizedBox(height: 6,),
+                              Row(
+                                children: [
+                                  Text("Walk-ins:",style: TextStyle(fontSize: 16,color: Colors.white),),
+                                  SizedBox(width: MediaQuery.of(context).size.height*0.01,),
+                                  Text("${user_current_strength}/${user_total_strength}",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color: Colors.white),)
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
                     ],
                   ),
-                ),
+                  SizedBox(width: MediaQuery.of(context).size.height*0.015,),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("",style: TextStyle(fontWeight: FontWeight.bold,color: color3,fontSize: 25),),
+                      SizedBox(height: MediaQuery.of(context).size.height*0.015,),
+                      Container(
+                        height: MediaQuery.of(context).size.height*0.11,
+                        width: MediaQuery.of(context).size.height*0.2,
+                        decoration: BoxDecoration(
+                            color: color2,
+                            borderRadius: BorderRadius.all(Radius.circular(20))
+                        ),
+                        child:Padding(
+                          padding: const EdgeInsets.all(15.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("Requirements :",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16,color: Colors.white),),
+                              SizedBox(height: MediaQuery.of(context).size.height*0.005,),
+                              Text("-${user_Instruction1}",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12,color: Colors.white),),
+                              SizedBox(height: MediaQuery.of(context).size.height*0.005),
+                              Text("- Aarogya setu",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12,color: Colors.white),),
+
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
-              SizedBox(height: 15,),
+              SizedBox(height: MediaQuery.of(context).size.height*0.075,),
               Text("Our timings:",style: TextStyle(fontWeight: FontWeight.bold,color: color4,fontSize: 25),),
               SizedBox(height: 15,),
               Center(
