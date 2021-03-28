@@ -254,6 +254,28 @@ class _DashboardState extends State<Dashboard> {
                       )
                   )
               ),
+              SizedBox(height: 20,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  SizedBox(
+                    height: 35,
+                    width: 125,
+                    child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          primary: color5,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: new BorderRadius.circular(30.0),
+                          ),// background
+                        ),
+
+                        onPressed: (){
+                      signout();
+                    },
+                        child: Text("Logout",style: TextStyle(color: Colors.white,fontSize: 18),)),
+                  ),
+                ],
+              )
 
 
 
