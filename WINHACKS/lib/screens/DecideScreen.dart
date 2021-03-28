@@ -150,7 +150,7 @@ class _DecideState extends State<Decide> {
                       if(present == true){
                         verify();
                       }
-                      else{
+                      if(present ==false){
                         Navigator.of(context)
                             .pushReplacement(MaterialPageRoute(builder: (context) => HomePage1()));
                       }

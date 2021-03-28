@@ -136,7 +136,7 @@ class _DashboardState extends State<Dashboard> {
                           height: 10,
                         ),
                           Text(
-                            "${user_current_strength}/${user_total_strength}")
+                            "${user_current_strength}/${user_total_strength}",style: TextStyle(fontSize: 15),)
                       ],
                     )
                   ],
@@ -170,7 +170,7 @@ class _DashboardState extends State<Dashboard> {
                                 children: [
                                   Text("Walk-ins:",style: TextStyle(fontSize: 16,color: Colors.white),),
                                   SizedBox(width: MediaQuery.of(context).size.height*0.01,),
-                                  Text("${user_current_strength}/${user_total_strength}",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color: Colors.white),)
+                                  Text("${user_current_strength}/${user_total_strength}",style: TextStyle(fontWeight: FontWeight.bold,fontSize:15,color: color5),)
                                 ],
                               ),
                             ],
