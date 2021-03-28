@@ -15,7 +15,8 @@ reference_for_read = db.collection(u'Vendors').document(u'SRMT').collection('SRM
 def extract(ref):
     docs = ref.stream()
     for doc in docs:
-        return int(f'{doc.to_dict()["Current_strength"]}')
+        if doc.id == 'iJ7GrgmV0y2o8K3r1WnU':
+           return int(f'{doc.to_dict()["Current_strength"]}')
         
 
 def increment():
